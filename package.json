@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Frontend for the ACM membership portal",
   "private": true,
+  "engines": {
+  "node": "18.x"
+  },
   "scripts": {
     "start": "next dev",
     "build": "next build",
