@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
-import './styles/';
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
+import '@/styles/reset.scss';
+import '@/styles/global.scss';
+import '@/styles/themes.scss';
 
 export const metadata: Metadata = {
   title: 'ACM UCLA Membership Portal',
@@ -17,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        <body>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,45 @@
+@use '../variables.scss' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: vars.$primaryblack;
+  height: 2rem;
+  width: 10rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition:
+    background-color 200ms,
+    transform 100ms;
+
+  &:hover {
+    background-color: vars.$primaryblack;
+    transform: scale(1.01);
+  }
+
+  &:focus {
+    outline: 2px solid vars.$secondaryblue-dark;
+    outline-offset: 2px;
+  }
+}

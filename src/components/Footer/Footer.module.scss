@@ -1,0 +1,10 @@
+@use '../../styles/variables.scss' as vars;
+
+.footer-container {
+  background-color: vars.$primaryblack;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
